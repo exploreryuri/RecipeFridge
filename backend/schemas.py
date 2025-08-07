@@ -47,6 +47,10 @@ class RecipeBase(BaseModel):
     description: Optional[str] = None
     ingredients: List[RecipeIngredient] = []
 
+      
+class RecipeCreate(RecipeBase):
+    pass
+
 
 class Recipe(RecipeBase):
     id: int
